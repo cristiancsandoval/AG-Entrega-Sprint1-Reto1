@@ -1,0 +1,297 @@
+@import '../scss/variables';
+
+@media only screen and (max-width:900px){
+
+    /*Estilos header - Media Query Mobile*/
+    header{
+        .navbar{
+            .container-fluid{
+                .offcanvas{
+                    
+                    width: 100%;
+                    background-color: $dark-blue;
+                    opacity: 90%;
+                    padding: 10px 5%;
+
+                    .offcanvas-header{
+                        .text-reset{
+                            background-color: $dark-blue;
+                            border: none;
+                        }
+                    }
+
+                    .offcanvas-body{
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        .navbar-nav{
+
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            flex-grow: 0;
+
+                            .nav-item{
+    
+                                margin: 0;
+                                padding: 15px;
+                                width: 100%;
+                                border-bottom: solid 1px $grayish-blue;
+    
+                                .nav-link{
+    
+                                    color: white;
+                                    font-size: $tam-m;
+    
+                                }
+                            }
+
+                            .nav-item:first-child{
+
+                                border-top: solid 1px $grayish-blue;
+                                
+                            }
+
+                        }
+    
+                        #btn-login{
+                            
+                            color: white;
+                            background-color: $dark-blue;
+                            border: solid 2px white;
+                            font-size: $tam-m;
+                            width: 100%;
+                            padding: 15px;
+                            margin: 15px 0;
+                            box-shadow: none;
+                        }
+
+                        .links-off{
+
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-end;
+                            justify-content: center;
+                            flex-grow: 7;
+
+                            img{
+                                margin: 10px 15px;
+                            }
+
+                        }
+    
+                    }
+                }
+    
+            }
+        }
+    }
+
+    /*Estilos main - Media Query Mobile*/
+    main{
+
+        .descripcion{
+    
+            margin: 10px 0;
+    
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+    
+            .des-texto{
+    
+                padding: 5%;
+    
+                h1{
+                    margin: 10px 0;
+                    text-align: center;
+                    font-size: $tam-xm;
+                }
+    
+                p{
+                    
+                    margin: 10px 0;
+                    text-align: center;
+    
+                }
+    
+                .des-botones{
+    
+                    margin: 10px 0;
+    
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+    
+                }
+    
+            }
+    
+            .des-imagen{
+
+                margin-bottom: 15px;
+
+                img{
+                    width: 330px;
+                }
+    
+                .figura-fondo{
+                    
+                    width: 85%;
+                    height: 190px;
+                    background-color: $soft-blue;
+                    border-radius: 0 0 0 130px;
+                    z-index: 0;
+                    position: absolute;
+                    top: 200px;
+                    right: 0%;
+    
+                }
+    
+            }
+    
+        }
+
+        .features{
+            .feat-nav{
+                .feat-nav-menu{
+                    ul{
+
+                        flex-direction: column;
+
+                        li{
+                            #feature1-btn{
+                                border-top: $grayish-blue solid 1px;
+                            }
+                        }
+
+                    }
+                }
+
+                .feat-menu-content {
+                    .feature-content{
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        .feat-img{
+
+                            margin: 0 2%;
+
+                            img{
+                                width: 330px;
+                            }
+
+                        }
+
+                        .feat-texto{
+                            
+                            align-items: center;
+                            margin: 105px 2%;
+
+                            h2{
+                                text-align: center;
+                            }
+
+                            p{
+                                text-align: center;
+                            }
+
+                            input{
+                                display: none;
+                            }
+
+                        }
+
+                    }
+                }
+
+            }
+
+            .figura-fondo-2{
+
+                width: 75%;
+                height: 255px;
+                top: 1370px;
+
+            }
+
+        }
+    
+    }
+
+    footer{
+
+        .contact{
+
+            h5{
+                width: 350px;
+            }
+
+            .form-contact{
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 10px 0;
+
+                .form-email{
+
+                    width: 100%;
+
+                }
+
+                #email, #btn-Contact{
+                    width: 100%;
+                    margin: 10px;
+                } 
+
+            }
+
+        }
+
+        .footer-links{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            ul{
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                padding: 15px 0;
+
+                li{
+                    margin: 15px 0;
+                }
+
+            }
+
+            .links{
+                a{
+                    margin: 10px;
+                }
+            }
+
+        }
+
+    }
+    
+
+}
